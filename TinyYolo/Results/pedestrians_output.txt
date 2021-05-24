@@ -1,0 +1,4 @@
+The video pedestrians.avi has:
+ - FPS: 10.0
+ -Duration: 0:01:19
+The execution of the Detector MobileNet SSD has been done in 0:00:07, so the FPS of this detector is: 113

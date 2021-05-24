@@ -1,0 +1,4 @@
+The video CCTV MALL 2.mp4 has:
+ - FPS: 29.97002997002997
+ -Duration: 0:02:58
+The execution of the Detector MobileNet SSD has been done in 0:00:44, so the FPS of this detector is: 121
