@@ -32,7 +32,7 @@ for video in videos:
 	duration = int(totalFrames/fps)
 	duration = str(datetime.timedelta(seconds = duration))
 	print(duration)
-	out = cv2.VideoWriter('Results/{}_output.avi'.format(path.split('/')[-1].split('.')[0]), cv2.VideoWriter_fourcc(*'DIVX'), 15, (W, H))
+	out = cv2.VideoWriter('Results/{}_output.avi'.format(path.split('/')[-1].split('.')[0]), cv2.VideoWriter_fourcc(*'DIVX'), fps, (W, H))
 	# loop over frames from the video stream
 	start_time = time.time()
 	while vs.isOpened():
@@ -75,7 +75,7 @@ for video in videos:
 	new_duration = int(end_time-start_time)
 	new_fps = int(totalFrames/new_duration)
 	new_duration = 	str(datetime.timedelta(seconds = new_duration))
-	f.write('The video {} has:\n - FPS: {}\n -Duration: {}\nThe execution of the Detector MobileNet SSD has been done in {}, so the FPS of this detector is: {}'.format(video, fps, duration, new_duration, new_fps))
+	f.write('The video {} has:\n - FPS: {}\n - Duration: {}\nThe execution of the Detector MobileNet SSD has been done in {}, so the FPS of this detector is: {}'.format(video, fps, duration, new_duration, new_fps))
 	out.release()
 	vs.release()
 	cv2.destroyAllWindows()
