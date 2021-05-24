@@ -1,4 +1,0 @@
-The video Esquina Democratica.mp4 has:
- - FPS: 29.97002997002997
- -Duration: 0:00:24
-The execution of the Detector MobileNet SSD has been done in 0:00:14, so the FPS of this detector is: 52
