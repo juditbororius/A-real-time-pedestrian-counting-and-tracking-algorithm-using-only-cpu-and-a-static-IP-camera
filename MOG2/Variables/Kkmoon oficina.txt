@@ -1,0 +1,5 @@
+variables; values
+minthresh; [15, 25]
+maxthresh; [None, None]
+lists_out; [[[413, 0], [W, 0], [W, H], [591, 709]]] 
+kernel; (6,6)
