@@ -33,7 +33,7 @@ for video in videos:
     duration = str(datetime.timedelta(seconds = duration))
     print(duration)
     out = cv2.VideoWriter('Results/{}_output.avi'.format(video_path.split('/')[-1].split('.')[0]),
-                          cv2.VideoWriter_fourcc(*'DIVX'), 15, (W, H))
+                          cv2.VideoWriter_fourcc(*'DIVX'), fps, (W, H))
 
     # loop over frames from the video stream
     start_time = time.time()
