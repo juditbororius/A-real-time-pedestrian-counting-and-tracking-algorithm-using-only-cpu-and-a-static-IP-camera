@@ -1,0 +1,4 @@
+The video Valleta.mp4 has:
+ - FPS: 30.1288697970671
+ -Duration: 0:00:22
+The execution of the Detector MobileNet SSD has been done in 0:04:15, so the FPS of this detector is: 2

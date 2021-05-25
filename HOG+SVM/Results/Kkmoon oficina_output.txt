@@ -1,0 +1,4 @@
+The video Kkmoon oficina.mp4 has:
+ - FPS: 30.0
+ -Duration: 0:01:07
+The execution of the Detector MobileNet SSD has been done in 0:13:11, so the FPS of this detector is: 2

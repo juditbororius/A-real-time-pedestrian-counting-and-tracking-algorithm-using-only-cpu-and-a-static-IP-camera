@@ -1,0 +1,4 @@
+The video Kkmoon botiga.mp4 has:
+ - FPS: 30.0
+ -Duration: 0:05:03
+The execution of the Detector MobileNet SSD has been done in 1:02:26, so the FPS of this detector is: 2

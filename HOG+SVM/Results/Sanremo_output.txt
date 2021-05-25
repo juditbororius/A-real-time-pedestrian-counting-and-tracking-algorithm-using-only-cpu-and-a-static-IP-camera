@@ -1,0 +1,4 @@
+The video Sanremo.mp4 has:
+ - FPS: 30.1119159542968
+ -Duration: 0:00:29
+The execution of the Detector MobileNet SSD has been done in 0:06:05, so the FPS of this detector is: 2
