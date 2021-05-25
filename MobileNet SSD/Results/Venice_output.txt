@@ -1,0 +1,4 @@
+The video Venice.mp4 has:
+ - FPS: 30.0
+ - Duration: 0:05:00
+The execution of the Detector MobileNet SSD has been done in 1:15:41, so the FPS of this detector is: 1

@@ -1,0 +1,4 @@
+The video playa4.mp4 has:
+ - FPS: 29.95801899812092
+ - Duration: 0:01:50
+The execution of the Detector MobileNet SSD has been done in 0:36:01, so the FPS of this detector is: 1
