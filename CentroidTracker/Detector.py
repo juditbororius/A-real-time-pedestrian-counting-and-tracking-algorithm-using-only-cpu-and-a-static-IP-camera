@@ -11,8 +11,10 @@ from Functions import *
 
 width = 960
 height = 720
+video_path = '../Videos/Kkmoon oficina.mp4'
+#video_path = '../../COUNTING/Videos/23-02-2021.mp4'
 
-df = pd.read_csv('Variables/Kkmoon botiga.txt', delimiter=';', index_col='variables')
+df = pd.read_csv('Variables/{}.txt'.format(video_path.split('/')[-1].split('.')[0]), delimiter=';', index_col='variables')
 mintresh = eval(df.loc['minthresh'][0])
 if mintresh[0] != None:
     xminthresh = mintresh[0]
@@ -32,18 +34,21 @@ if maxthresh[1] != None:
 else:
     ymaxthresh = height
 
+if eval(df.loc['maxarea'][0]) != None:
+    maxarea = eval(df.loc['maxarea'][0])
+else:
+    maxarea = width*height
+if eval(df.loc['minarea'][0]) != None:
+    minarea = eval(df.loc['minarea'][0])
+else:
+    minarea = 0
+
 if eval(df.loc['lists_out'][0]) != None:
     lists_out = []
     for list_out in eval(df.loc['lists_out'][0]):
         lists_out.append(list_out)
 else:
     lists_out = None
-
-minarea = eval(df.loc['minarea'][0])
-maxarea = eval(df.loc['maxarea'][0])
-
-video_path = '../Videos/Kkmoon botiga.mp4'
-#video_path = '../../COUNTING/Videos/23-02-2021.mp4'
 
 #video_path = 'rtsp://192.168.1.90/1'
 cap = cv2.VideoCapture(video_path)
@@ -136,5 +141,3 @@ foo = open('Temporary/temp.csv', 'r')
 foo.close()
 os.remove('Temporary/temp.csv')
 cap.release()
-trackingfile.close()
-countingfile.close()

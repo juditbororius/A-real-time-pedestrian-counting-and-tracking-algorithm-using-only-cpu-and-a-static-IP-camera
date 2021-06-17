@@ -61,11 +61,11 @@ while 'temp.csv' in os.listdir('Temporary'):
             occupation = prevocc - (sum(ct.totalOut) - prevout) + (sum(ct.totalIn) - previn)
             occ_tienda = prevocc_tienda - (ct.totalOut[2] - prevout_tienda) + (ct.totalIn[2] - previn_tienda)
 
-            if occ_tienda < 0:
+            '''if occ_tienda < 0:
                 occ_tienda = 0
             previn_tienda = ct.totalIn[2]
             prevout_tienda = ct.totalOut[2]
-            prevocc = occ_tienda
+            prevocc = occ_tienda'''
             if occupation < 0:
                 occupation = 0
             prevout = sum(ct.totalOut)
